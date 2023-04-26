@@ -871,8 +871,7 @@ class Account(
 
     fun isAcceptable(user: User): Boolean {
         return !isHidden(user) && // if user hasn't hided this author
-            user.reportsBy(userProfile()).isEmpty() && // if user has not reported this post
-            user.countReportAuthorsBy(followingKeySet()) < 5
+            user.reportsBy(userProfile()).isEmpty() // if user has not reported this post
     }
 
     fun isAcceptableDirect(note: Note): Boolean {
