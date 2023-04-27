@@ -383,9 +383,9 @@ open class NewPostViewModel() : ViewModel() {
                     isUploadingImage = false
 
                     if (note == null) {
-                        message = TextFieldValue(message.text + "\n\n" + imageUrl)
+                        message = TextFieldValue(message.text + "\n\n" + imageUrl + "\n\n" + imageUrl)
                     } else {
-                        message = TextFieldValue(message.text + "\n\nnostr:" + note.toNEvent())
+                        message = TextFieldValue(message.text + "\n\nnostr:" + note.toNEvent() + "\n\n" + imageUrl)
                     }
 
                     urlPreview = findUrlInMessage()
