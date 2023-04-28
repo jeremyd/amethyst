@@ -52,7 +52,6 @@ class AntiSpamFilter {
         recentMessages.put(hash, idHex)
         return false
     }
-
     val liveSpam: AntiSpamLiveData = AntiSpamLiveData(this)
 }
 
