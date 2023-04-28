@@ -18,6 +18,11 @@ class AntiSpamFilter {
     fun isSpam(event: Event, relay: Relay?): Boolean {
         val idHex = event.id
 
+        // fork friday!!
+        if (event.content.contains("bitcoin") || event.content.contains("btc") || event.content.contains("crypto") || event.content.contains("cryptocurrency") || event.content.contains("blockchain")) {
+            return true
+        }
+
         // if short message, ok
         if (event.content.length < 50) return false
 
@@ -43,9 +48,8 @@ class AntiSpamFilter {
 
             return true
         }
-
+        val toLowerContent = event.content.toLowerCase()
         recentMessages.put(hash, idHex)
-
         return false
     }
 
