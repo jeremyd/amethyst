@@ -3,7 +3,7 @@ name: Create Release Assets
 on:
   push:
     tags:
-    - 'v0.42.5*' # Push events to matching v*, i.e. v1.0, v20.15.10
+    - 'v0.42.5_r*' # Push events to matching v*, i.e. v1.0, v20.15.10
 
 jobs:
   deploy:
