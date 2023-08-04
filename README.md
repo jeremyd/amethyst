@@ -2,6 +2,7 @@
 
 <img align="right" src="./docs/screenshots/home.png" data-canonical-src="./docs/screenshots/home.png" width="350px"/>
 
+
 Amethyst brings the best social network to your Android phone. Just insert your Nostr private key and start posting. 
 
 [<img src="./docs/design/obtainium.png"
