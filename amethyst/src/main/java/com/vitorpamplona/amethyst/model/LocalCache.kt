@@ -2817,6 +2817,7 @@ object LocalCache : ILocalCache {
         relay: Relay?,
         wasVerified: Boolean,
     ): Boolean {
+        /*
         if (deletionIndex.hasBeenDeleted(event)) {
             // update relay with deletion event from another.
             if (relay != null) {
@@ -2839,6 +2840,7 @@ object LocalCache : ILocalCache {
                 }
             }
         }
+         */
 
         return justConsumeInner(event, relay?.brief, wasVerified)
     }
